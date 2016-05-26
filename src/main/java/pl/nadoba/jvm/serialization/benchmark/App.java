@@ -13,6 +13,10 @@ public class App {
 
         BenchmarkEngine engine = new BenchmarkEngine(objectCount, isPrintEnabled);
 
-        
+        engine.testSerializable();
+        engine.testExternalizable();
+        engine.testJackson();
+        engine.testGson();
+        engine.testJaxb();
     }
 }
